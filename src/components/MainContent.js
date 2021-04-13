@@ -1,10 +1,12 @@
 import React from 'react'
 import AnimeCard from './AnimeCard';
+import Filter from './Filter';
 
 function MainContent(props) {
 	return (
 		<main>
 			<div className="main-head">
+				<Filter onChange={props}/>
 				<form 
 					className="search-box"
 					onSubmit={props.HandleSearch}>
